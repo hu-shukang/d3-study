@@ -1,14 +1,19 @@
 import Page1 from '@/pages/page1';
+import Page2 from '@/pages/page2';
 import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
 
 const routes: RouteObject[] = [
   {
     path: '',
-    element: <Navigate to={'/1'} />,
+    element: <Navigate to={'/2'} />,
   },
   {
     path: '/1',
     element: <Page1 />,
+  },
+  {
+    path: '/2',
+    element: <Page2 />,
   },
 ];
 
